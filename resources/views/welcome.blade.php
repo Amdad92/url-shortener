@@ -14,8 +14,8 @@
     <nav class="border-b border-gray-200 bg-white/80 backdrop-blur-md dark:border-gray-800 dark:bg-gray-900/80">
         <div class="container mx-auto flex h-16 items-center justify-between px-4">
             <a href="#" class="flex items-center gap-2 text-xl font-bold">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" 
-                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                     class="text-blue-600 dark:text-blue-400">
                     <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
                     <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
@@ -37,8 +37,8 @@
         </header>
 
         <!-- Form -->
-        <form method="POST" action="{{ route('shorten') }}" 
-              class="mb-8 rounded-xl border bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800">
+        <form method="POST" action="{{ route('shorten') }}"
+            class="mb-8 rounded-xl border bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800">
             @csrf
             <div class="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
                 <div class="flex-1 relative">
@@ -46,11 +46,10 @@
                         class="w-full h-12 px-4 pr-12 rounded-lg border border-gray-300 focus:border-blue-500 
                                focus:ring-2 focus:ring-blue-200 dark:border-gray-600 dark:bg-gray-700 
                                dark:text-white dark:focus:border-blue-400 dark:focus:ring-blue-400/20"
-                        placeholder="Enter your long URL here..."
-                        required>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" 
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
-                        class="absolute right-3 top-3 h-6 w-6 text-gray-400 dark:text-gray-500">
+                        placeholder="Enter your long URL here..." required>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="absolute right-3 top-3 h-6 w-6 text-gray-400 dark:text-gray-500">
                         <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
                         <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
                     </svg>
@@ -65,24 +64,23 @@
             </div>
         </form>
 
-         <!-- Success Message -->
+        <!-- Success Message -->
         @if (session('success'))
-        <div class="mb-6 p-4 bg-green-50 border-l-4 border-green-400 dark:bg-green-900/20 dark:border-green-400 rounded-md shadow-sm">
-            <div class="flex items-center">
-                <svg class="h-5 w-5 text-green-400 dark:text-green-300 mr-3" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" 
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" 
-                        clip-rule="evenodd" />
-                </svg>
-                <div class="text-gray-700 dark:text-gray-200 text-sm font-medium">
-                    {{ session('success') }}
-                </div>
+            <div
+                class="mb-4 p-4 bg-green-50 border-l-4 border-green-400 text-green-700 dark:bg-green-900/20 dark:border-green-400 dark:text-green-200">
+                {{ session('success') }}
             </div>
-        </div>
         @endif
-        
+
+        @if (session('info'))
+            <div
+                class="mb-4 p-4 bg-blue-50 border-l-4 border-blue-400 text-blue-700 dark:bg-blue-900/20 dark:border-blue-400 dark:text-blue-200">
+                {{ session('info') }}
+            </div>
+        @endif
+
     </main>
-    
+
 </body>
 
 </html>
