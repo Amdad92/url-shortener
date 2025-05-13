@@ -1,66 +1,62 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Laravel URL Shortener
+A Practical Implementation of Core Laravel Concepts
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Overview 🔗
+This URL shortener web application demonstrates fundamental Laravel features through a real-world implementation. Built with Laravel's core components, it provides a hands-on learning experience in modern PHP web development while delivering functional URL shortening capabilities.
 
-## About Laravel
+Key Features ✨
+URL Shortening: Convert long URLs into compact, shareable links
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Redirection System: Seamless forwarding from shortened URLs to original destinations
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Form Validation: Robust input validation for URL formatting
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Database Management: Secure storage and retrieval of URL mappings
 
-## Learning Laravel
+Responsive UI: Clean and intuitive user interface with dark mode support
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Technical Stack 🛠️
+Framework: Laravel 10
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Database: MySQL
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Frontend: Laravel Blade + Tailwind CSS
 
-## Laravel Sponsors
+ORM: Eloquent
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Routing: Laravel RESTful routes
 
-### Premium Partners
+Validation: Laravel Validator
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+Learning Outcomes 📚
+Through this project, you'll master essential Laravel concepts:
 
-## Contributing
+✅ Database Migrations
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Create and modify database schemas using migration files
 
-## Code of Conduct
+Implement unique constraints for data integrity
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+✅ Form Handling
 
-## Security Vulnerabilities
+Build secure forms with CSRF protection
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Process user input with server-side validation
 
-## License
+Implement error handling and user feedback
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+✅ Eloquent ORM
+
+Create models for data interaction
+
+Perform CRUD operations with query builder
+
+Implement duplicate detection and prevention
+
+✅ Routing System
+
+Configure RESTful routes
+
+Handle HTTP requests and responses
+
+Implement parameterized URL redirection
